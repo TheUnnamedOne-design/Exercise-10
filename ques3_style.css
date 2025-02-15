@@ -1,0 +1,47 @@
+#grocery_form
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(159,172,145);
+    width: 400px;
+}
+
+.inputfield
+{
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 3px;
+}
+
+.images
+{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.checkbox
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.texter
+{
+    font-weight: bold;
+}
+
+#submitbutton
+{
+    text-align: center;
+    background-color: rgb(170,137,85);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+    height: 30px;
+    margin-top: 30px;
+
+}

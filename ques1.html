@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p  id="tablenames">
+        
+        <table border="2px solid black" cellspacing="0px" cellpadding="5px" style="width: 250px;" id="tbl">
+            <tr>
+                <td>P-Id</td>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>Alen</td>
+                <td>39</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>Deena</td>
+                <td>47</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>Diana</td>
+                <td>21</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>Jack</td>
+                <td>54</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>Jain</td>
+                <td>23</td>
+            </tr>
+            
+            
+            <tr>
+                <td>6</td>
+                <td>Kelvin</td>
+                <td>61</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>Louis</td>
+                <td>69</td>
+            </tr>
+            
+            
+            <tr>
+                <td>8</td>
+                <td>Rex</td>
+                <td>49</td>
+            </tr>
+            
+        </table>
+    </p>
+    <button onclick="Sort()">Sort</button>
+
+    <p>
+        Enter P-Id to search : &emsp; <input type="text" placeholder="P-Id" value="0" id="searcher">
+        <br><br>
+        <button id="search" onclick="search()">Search</button>
+        <br><br>
+        <span id="result"></span>
+    </p>
+
+    <button id="classification_button" onclick="classification()">Classification</button>
+    <p id="classification">
+    </p>
+    <script src="quest1_commands.js"></script>
+</body>
+</html>

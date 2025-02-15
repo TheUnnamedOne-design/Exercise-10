@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Order Form</title>
+    <link rel="stylesheet" href="ques3_style.css">
+    <script defer src="ques3_commands.js"></script> 
+</head>
+<body>
+    <form id="grocery_form">
+        <fieldset>
+            <center><h2>Grocery Order Form</h2></center>
+            <br>
+            <b>Customer Name</b>
+            <br>
+            <input type="text" class="inputfield" id="firstname">&ensp;
+            <input type="text" class="inputfield" id="lastname">
+            <br><br>
+
+            <b>Phone number</b>
+            <br>
+            <input type="tel" class="inputfield" id="firstnumber">&ensp;
+            <input type="tel" class="inputfield" id="lastnumber">
+            <br><br>
+
+            <b>Email</b>
+            <br>
+            <input type="text" class="inputfield" id="Email">
+            <br><br><hr><br>
+
+            <p style="font-size: 20px; font-weight: bold;">Products</p>
+
+            <table class="texter" cellpadding="10px">
+                <tr>
+                    <td><img class="images" src="apple.jpg"></td>
+                    <td><input type="checkbox" id="applecheck" class="checkbox"> Apple</td>
+                    <td>$10</td>
+                    <td><input type="text" id="applenumber" style="width: 40px;"> kg</td>
+                </tr>
+
+                <tr>
+                    <td><img class="images" src="banana.jpg"></td>
+                    <td><input type="checkbox" id="bananacheck" class="checkbox"> Banana</td>
+                    <td>$5</td>
+                    <td><input type="text" id="banananumber" style="width: 40px;"> kg</td>
+                </tr>
+
+                <tr>
+                    <td><img class="images" src="avocado.jpeg"></td>
+                    <td><input type="checkbox" id="avocadocheck" class="checkbox"> Avocado</td>
+                    <td>$7</td>
+                    <td><input type="text" id="avocadonumber" style="width: 40px;"> kg</td>
+                </tr>
+
+            </table>
+
+            <center><button type="submit" id="submitbutton">Submit</button></center>
+
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <script>
+        function getQueryParams() {
+            let params = new URLSearchParams(window.location.search);
+            let fname = params.get("fname");
+            let lname = params.get("lname");
+            let fnumber = params.get("fnumber");
+            let lnumber = params.get("lnumber");
+            let email = params.get("email");
+            let ac=params.get("ac");
+            let an=params.get("an");
+            let bc=params.get("bc");
+            let bn=params.get("bn");
+            let avc=params.get("avc");
+            let avn=params.get("avn");
+
+            document.getElementById("fname").innerHTML = fname;
+            document.getElementById("lname").innerHTML = lname;
+            document.getElementById("fnumber").innerHTML = fnumber;
+            document.getElementById("lnumber").innerHTML = lnumber;
+            document.getElementById("email").innerHTML = email;
+
+
+            var costtable=document.getElementById("costtable");
+            var text="";
+            var total=0;
+            if(ac=="Yes")
+            {
+                text+='<tr><th>Apple</th><th>$10</th><th>'+(an)+'</th></tr>';
+                total+=an*10;
+            }
+            if(bc=="Yes")
+            {
+                text+='<tr><th>Banana</th><th>$5</th><th>'+(bn)+'</th></tr>';
+                total+=bn*5;
+            }
+            if(avc=="Yes")
+            {
+                text+='<tr><th>Avocado</th><th>$7</th><th>'+(avn)+'</th></tr>';
+                total+=avn*7;
+            }
+            document.getElementById("costtable").innerHTML+=text;
+            document.getElementById("total").innerHTML="$ "+total;
+        }
+
+        window.onload = getQueryParams;
+    </script>
+</head>
+<body>
+
+    <form>
+            <table cellpadding="15px" style="border: 2px solid black;">
+                <tr>
+                    <th colspan="3"><h1>Grocery Shopping</h1></th>
+                </tr>
+                <tr > 
+                    <th>Name</th>
+                    <th id="fname"></th>
+                    <th id="lname"></th>
+                </tr>
+
+                <tr>
+                    <th>Number</th>
+                    <th id="fnumber"></th>
+                    <th id="lnumber"></th>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <th id="email" colspan="2"></th>
+                </tr>
+
+                <tr>
+                    <th colspan="3">
+                        <table border="2px solid black" cellspacing="0px" cellpadding="10px" id="costtable">
+                            <tr>
+                                <th>Item Name.</th>
+                                <th>Cost.</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </table>    
+
+                    </th>
+                </tr>
+
+                <tr>
+                    <th> Total : </th>
+                    <th colspan="2" id="total"></th>
+                </tr>
+
+            </table>
+    </form>
+
+</body>
+</html>
